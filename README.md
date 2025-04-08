@@ -8,12 +8,24 @@ Este repositorio contiene herramientas para verificar que la instalación del SD
 
 Primero, es recomendable crear un entorno virtual para aislar las dependencias de este proyecto:
 
-```bash
-# Instalar virtualenv si no lo tienes
-pip install virtualenv
+### 0. Clonar el repositorio
 
-# Crear un nuevo entorno virtual
-python -m virtualenv venv
+Primero, clona este repositorio en tu máquina local:
+```bash
+git clone https://github.com/Tknika/ai-pipleines-course
+```
+
+
+```bash
+sudo apt update
+```
+```bash
+ sudo apt install python3.12-venv
+```
+
+```bash
+# Crear un nuevo entorno virtual con el módulo venv incorporado en Python
+python -m venv .venv
 
 # Activar el entorno virtual
 # En Windows:
