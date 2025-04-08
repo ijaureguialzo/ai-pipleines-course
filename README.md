@@ -2,11 +2,64 @@
 
 Este repositorio contiene herramientas para verificar que la instalación del SDK de Hugging Face está correctamente configurada en tu sistema.
 
+## Instalación y configuración de WSL en Windows
+
+### 1. Instalar WSL en Windows
+
+Para instalar WSL en Windows 10/11:
+
+1. Abre PowerShell como administrador
+2. Ejecuta el siguiente comando:
+   ```bash
+   wsl --install
+   ```
+
+3. Reinicia tu computadora cuando se te solicite
+
+Este comando instalará Ubuntu por defecto. Si prefieres otra distribución, puedes instalarla después con:
+```bash
+wsl --install -d <Distribución>
+```
+
+Por ejemplo:
+```bash
+wsl --install -d Ubuntu
+```
+
+### 2. Configurar WSL
+
+Después de reiniciar, WSL se iniciará automáticamente y te pedirá que configures un nombre de usuario y contraseña para tu distribución Linux.
+
+### 3. Actualizar WSL (opcional)
+
+Para actualizar a WSL 2 (recomendado para mejor rendimiento):
+```bash
+wsl --set-default-version 2
+```
+
+### 4. Usar WSL desde Visual Studio Code
+
+1. Instala la extensión "Remote - WSL" en VS Code:
+   - Abre VS Code
+   - Ve a Extensions (Ctrl+Shift+X)
+   - Busca "Remote Development" e instala todas las extensiones
+
+2. Conectar a WSL desde VS Code:
+   - Haz clic en el icono verde "><" en la esquina inferior izquierda de VS Code
+   - Selecciona "New WSL Window" o "Connect to WSL"
+   - VS Code se reabrirá conectado a tu distribución WSL
+
+3. Navegar a tu proyecto:
+   - Una vez conectado a WSL, puedes abrir una carpeta desde la terminal integrada:
+   ```bash
+   cd /path/to/your/project
+   code .
+   ```
+   - O usar "File > Open Folder" para navegar a tu proyecto dentro del sistema de archivos de WSL
+
+Ahora puedes ejecutar todos los comandos de instalación y verificación mencionados anteriormente dentro de tu entorno WSL.
+
 ## Instrucciones de Instalación
-
-### 1. Crear un entorno virtual
-
-Primero, es recomendable crear un entorno virtual para aislar las dependencias de este proyecto:
 
 ### 0. Clonar el repositorio
 
@@ -15,6 +68,9 @@ Primero, clona este repositorio en tu máquina local:
 git clone https://github.com/Tknika/ai-pipleines-course
 ```
 
+### 1. Crear un entorno virtual
+
+Primero, es recomendable crear un entorno virtual para aislar las dependencias de este proyecto:
 
 ```bash
 sudo apt update
@@ -86,4 +142,6 @@ Si encuentras algún error durante la verificación:
 
 - Python 3.7 o superior
 - Conexión a internet para descargar modelos
-- Suficiente espacio en disco para los modelos (al menos 500 MB para las pruebas básicas) 
+- Suficiente espacio en disco para los modelos (al menos 500 MB para las pruebas básicas)
+
+Ahora puedes ejecutar todos los comandos de instalación y verificación mencionados anteriormente dentro de tu entorno WSL. 
