@@ -26,6 +26,9 @@ __pycache__/
 # C extensions
 *.so
 
+
+credentials.json
+reportes/
 # Distribution / packaging
 .Python
 build/
