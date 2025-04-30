@@ -38,7 +38,7 @@ pip install pandas torch transformers gspread oauth2client
 
 ## Paso 6: Ejecutar el Script
 ```bash
-python analisis_sentimiento_formulario.py
+python test_pipeline.py
 ```
 
 ## Funcionamiento
