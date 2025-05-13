@@ -30,12 +30,7 @@ wsl --install -d Ubuntu
 
 Después de reiniciar, WSL se iniciará automáticamente y te pedirá que configures un nombre de usuario y contraseña para tu distribución Linux.
 
-### 3. Actualizar WSL (opcional)
-
-Para actualizar a WSL 2 (recomendado para mejor rendimiento):
-```bash
-wsl --set-default-version 2
-```
+Sino reiniciamos wsl dara problemas
 
 ### 4. Usar WSL desde Visual Studio Code
 
@@ -75,18 +70,19 @@ Primero, es recomendable crear un entorno virtual para aislar las dependencias d
 ```bash
 sudo apt update
 ```
+```bash  
+sudo apt install python3-pip
+```
 ```bash
  sudo apt install python3.12-venv
 ```
-
+### Importante
 ```bash
 # Crear un nuevo entorno virtual con el módulo venv incorporado en Python
-python -m venv .venv
+python3 -m venv .venv
 
 # Activar el entorno virtual
-# En Windows:
-venv\Scripts\activate
-# En macOS/Linux:
+
 source venv/bin/activate
 ```
 
