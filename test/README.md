@@ -12,12 +12,13 @@
 2. Haz clic en "Create Service Account"
 3. Asigna un nombre y descripción para la cuenta
 4. Otorga el rol "Editor" a la cuenta de servicio
-5. Haz clic en "Create Key" y selecciona JSON
+5. Desde los 3 botones de acciones selecciona 'Administrar Claves'
+5. Haz clic en "Agregar Clave", 'Crear nueva clave' y selecciona JSON
 6. Guarda el archivo JSON en el mismo directorio que tu script (renómbralo a `credentials.json`)
 
 ## Paso 3: Compartir tu Google Sheet
 1. Crea un [formulario de Google](https://docs.google.com/forms) con preguntas de texto libre
-2. Configura las respuestas para que se guarden en una hoja de cálculo
+2. Configura las respuestas para que se guarden en una hoja de cálculo (en la pestaña respuestas de edicion del form)
 3. Obtén el ID de la hoja de cálculo (parte larga en la URL):
    - Ejemplo: `https://docs.google.com/spreadsheets/d/`**`1AbCdEfGhIjKlMnOpQrStUvWxYz`**`/edit`
 4. Haz clic en "Compartir" en la esquina superior derecha
@@ -31,7 +32,7 @@
    - `SPREADSHEET_ID`: El ID de tu hoja de cálculo
    - `REPORT_FOLDER`: Carpeta donde se guardarán los reportes (opcional)
    
-## Paso 5: Instalar Dependencias
+## Paso 5: Instalar Dependencias (si no lo estan ya)
 ```bash
 pip install pandas torch transformers gspread oauth2client
 ```
