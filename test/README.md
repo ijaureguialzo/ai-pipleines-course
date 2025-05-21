@@ -51,9 +51,3 @@ El script:
    - Estadísticas generales y por pregunta
    - Ejemplos destacados de respuestas positivas y negativas
    - Una tabla con los resultados completos
-
-## Notas Importantes
-- El script detecta automáticamente qué campos contienen texto analizable
-- Se ignorarán respuestas numéricas, de un solo carácter o demasiado cortas
-- La primera ejecución puede tardar más tiempo ya que descarga el modelo
-- Si quieres modificar qué se considera texto válido, ajusta el parámetro `min_text_length` en el script
