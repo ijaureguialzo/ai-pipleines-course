@@ -11,3 +11,7 @@ poetry run python check_huggingface_installation.py
 ```shell
 poetry run python simple_inference.py
 ```
+
+```shell
+poetry run python test_pipeline.py
+```
